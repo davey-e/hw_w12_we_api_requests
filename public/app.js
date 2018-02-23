@@ -1,8 +1,7 @@
 const app = function(){
 
-    const url = "https://api.iextrading.com/1.0/stock/aapl/chart/1m";
-    
-    makeRequest(url, requestComplete);
+    const getCompanyInfoButton = document.getElementById("get-company-info-button");
+    getCompanyInfoButton.addEventListener("click", getCompanyInfo);
     
 }
 
@@ -19,6 +18,15 @@ const requestComplete = function(){
     const data = JSON.parse(jsonString); //This parses the string into a js object
     console.log(data);
     
+}
+
+const getCompanyInfo = function(){
+    const stockNameInput = document.getElementById("stock-name-input");
+    const company = stockNameInput.value;
+    console.log("company:",company);
+    const url = "https://api.iextrading.com/1.0/stock/" + company + "/company";
+    console.log(url);
+    makeRequest(url, requestComplete);
 }
 
 
