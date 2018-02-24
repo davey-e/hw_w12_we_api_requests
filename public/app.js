@@ -1,11 +1,11 @@
 const app = function(){
-    const getCompanyInfoButton = document.getElementById("get-company-info-button");
-    getCompanyInfoButton.addEventListener("click", getCompanyInfo);
+    const getCompanyInfoButton = document.getElementById("get-data-button");
+    getCompanyInfoButton.addEventListener("click", getData);
+}
 
-    const getStockDataButton = document.getElementById("get-stock-data-button");
-    getStockDataButton.addEventListener("click", getStockData);
-
-    
+const getData = function(){
+    getCompanyInfo();
+    getStockData();
 }
 
 document.addEventListener("DOMContentLoaded", app);

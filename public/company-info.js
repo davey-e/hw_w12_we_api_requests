@@ -26,8 +26,6 @@ const capitalizeFirstLetter = function(string) {
 const displayCompanyInfo = function(data){
     const companyInfoDiv = document.getElementById("company-info");
     companyInfoDiv.innerHTML = "";
-    const chartDiv = document.getElementById("chart-area");
-    chartDiv.innerHTML = "";
     const header = document.createElement("h2");
     header.innerText = data.companyName;
     companyInfoDiv.appendChild(header);
