@@ -24,11 +24,13 @@ const capitalizeFirstLetter = function(string) {
 }
 
 const displayCompanyInfo = function(data){
-    const div = document.getElementById("company-info");
-    div.innerHTML = "";
-    const header = document.createElement("h1");
+    const companyInfoDiv = document.getElementById("company-info");
+    companyInfoDiv.innerHTML = "";
+    const chartDiv = document.getElementById("chart-area");
+    chartDiv.innerHTML = "";
+    const header = document.createElement("h2");
     header.innerText = data.companyName;
-    div.appendChild(header);
+    companyInfoDiv.appendChild(header);
     const table = document.createElement("table");
 
     for(let item in data){
@@ -48,5 +50,5 @@ const displayCompanyInfo = function(data){
             table.appendChild(tr);
         }
     };
-    div.appendChild(table);
+    companyInfoDiv.appendChild(table);
 }

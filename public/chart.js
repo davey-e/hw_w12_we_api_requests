@@ -35,7 +35,7 @@ const displayChartData = function(data){
     const stockNameInput = document.getElementById("stock-name-input");
     const companyName = stockNameInput.value;
     const container = document.getElementById("chart-area");
-    const heading = "Stock data for " + companyName;
+    const heading = "Stock Data for " + companyName;
     new StockChart(companyName, heading, data, container);
     
 };

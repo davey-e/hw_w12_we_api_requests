@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: steelblue;
+}
+
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 18px;
+}
+
+table{
+    font-size: 14px;
+}
+
+#company-info{
+    height: 240px;
+}
+
+#chart-area{
+    height: 320px;
+}
